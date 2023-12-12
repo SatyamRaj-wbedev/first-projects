@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+}
+
+#grey{
+    background-color: grey;
+    padding: 20px;
+    border: 1px solid black;
+}
+#cyan{
+    background-color: cyan;
+    padding: 20px;
+    border: 1px solid black;
+}
+#purple {
+    background-color: purple;
+    padding: 20px;
+    border: 1px solid black;
+}
+#yellow{
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid black;
+}

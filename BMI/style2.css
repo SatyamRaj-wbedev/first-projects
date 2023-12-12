@@ -1,0 +1,20 @@
+body{
+    background-color: #212121;
+    color:#fff;
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    padding:5px;
+    border-radius: 5px;
+    
+}
+button:hover{
+    text-shadow: 0 0 #212121 ;
+}
+ 
+#results{
+    margin: 15px;
+    font-size: 20px;
+}
