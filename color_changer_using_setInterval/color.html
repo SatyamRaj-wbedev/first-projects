@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Cap></Cap>olor Changer Uisng WebApi</title>
+</head>
+<body style="background-color: #212121; color:#fff; text-align: center; align-items: center;">
+    <h1 style="margin-top: 250px;">START should start changing the background color and STOP should stop the changing the background</h1>
+    <button id="Start"  style="border-radius: 5px; padding: 8px;">START</button>
+    <button id="Stop"  style="border-radius: 5px; padding: 8px;">STOP</button>
+</body>
+<script>
+    console.log();
+    
+    // Generate a Random colour
+     const Randomcolor = ()=>{
+        const hexa= "0123456789ABCDEF"
+        let color = '#'
+        for(i=0;i<6;i++){
+           color+=hexa[Math.floor(Math.random() *16)];
+        }
+        return color;
+     }
+    //  console.log(Randomcolor())
+
+    const start= document.querySelector('#Start')
+    const stop= document.querySelector('#Stop')
+    const body=  document.querySelector('body')
+      // Storing setInterval in a variable and using it as when required
+ let change;
+    start.addEventListener('click',()=>{
+      change= setInterval(()=>{
+            body.style.backgroundColor = Randomcolor()
+          }, 1000)
+    })
+    stop.addEventListener('click',()=>{
+        clearInterval(change)
+    })
+
+
+</script>
+</html>
