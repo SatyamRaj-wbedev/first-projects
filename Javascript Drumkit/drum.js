@@ -7,12 +7,12 @@ window.addEventListener('keydown',(e)=>{
     keys.classList.add('playing');
     
 })
+
 function removeTransition(e){
     if(!e.propertyName)return;
     this.classList.remove('playing')
      
 }
-
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(item =>{
